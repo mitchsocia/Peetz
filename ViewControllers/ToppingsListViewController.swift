@@ -51,6 +51,10 @@ class ToppingsListViewController: UITableViewController {
         return toppingsCategories.count
     }
     
+//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        
+//    }
+    
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         
         return SectionHeaderHeight
