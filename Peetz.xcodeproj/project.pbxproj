@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		7D0A2FF1220A0D3500EF7389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A2FF0220A0D3500EF7389 /* AppDelegate.swift */; };
-		7D0A2FF3220A0D3500EF7389 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A2FF2220A0D3500EF7389 /* ViewController.swift */; };
 		7D0A2FF6220A0D3500EF7389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D0A2FF4220A0D3500EF7389 /* Main.storyboard */; };
 		7D0A2FF8220A0D3600EF7389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D0A2FF7220A0D3600EF7389 /* Assets.xcassets */; };
 		7D0A2FFB220A0D3600EF7389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D0A2FF9220A0D3600EF7389 /* LaunchScreen.storyboard */; };
 		7D0A3006220A0D3600EF7389 /* PeetzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A3005220A0D3600EF7389 /* PeetzTests.swift */; };
+		7D0A3011220A0FA800EF7389 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A3010220A0FA800EF7389 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +28,6 @@
 /* Begin PBXFileReference section */
 		7D0A2FED220A0D3500EF7389 /* Peetz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Peetz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D0A2FF0220A0D3500EF7389 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7D0A2FF2220A0D3500EF7389 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7D0A2FF5220A0D3500EF7389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D0A2FF7220A0D3600EF7389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D0A2FFA220A0D3600EF7389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +35,7 @@
 		7D0A3001220A0D3600EF7389 /* PeetzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeetzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D0A3005220A0D3600EF7389 /* PeetzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeetzTests.swift; sourceTree = "<group>"; };
 		7D0A3007220A0D3600EF7389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D0A3010220A0FA800EF7389 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				7D0A2FF0220A0D3500EF7389 /* AppDelegate.swift */,
-				7D0A2FF2220A0D3500EF7389 /* ViewController.swift */,
 				7D0A2FF4220A0D3500EF7389 /* Main.storyboard */,
+				7D0A3010220A0FA800EF7389 /* HomeViewController.swift */,
 				7D0A2FF7220A0D3600EF7389 /* Assets.xcassets */,
 				7D0A2FF9220A0D3600EF7389 /* LaunchScreen.storyboard */,
 				7D0A2FFC220A0D3600EF7389 /* Info.plist */,
@@ -197,8 +197,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D0A2FF3220A0D3500EF7389 /* ViewController.swift in Sources */,
 				7D0A2FF1220A0D3500EF7389 /* AppDelegate.swift in Sources */,
+				7D0A3011220A0FA800EF7389 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
