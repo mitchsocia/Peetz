@@ -16,6 +16,7 @@ var toppingsCategories = [
     ToppingCategory(categoryName: "Misc.", toppings: ["Pineapple", "Pickle", "Garlic"])
 ]
 
+// MARK: -
     let SectionHeaderHeight: CGFloat = 50
     var toppingsChoice = [String]()
 
@@ -24,7 +25,7 @@ class ToppingsListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableView.reloadData()
     }
     
     // MARK: - TableView Setup
