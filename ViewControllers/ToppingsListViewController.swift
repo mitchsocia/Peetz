@@ -25,7 +25,15 @@ class ToppingsListViewController: UITableViewController {
 
     // MARK: - TableView Setup
     
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return toppingsCategories[section].categoryName.count
+    }
     
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "toppingCell", for: indexPath)
+        cell.textLabel?.text = toppingsCategories[indexPath.section].toppings[indexPath.row]
+        return cell
+    }
     
 
 
