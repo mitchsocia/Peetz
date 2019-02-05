@@ -16,13 +16,17 @@ var toppingsCategories = [
     ToppingCategory(categoryName: "Misc.", toppings: ["Pineapple", "Pickle", "Garlic"])
 ]
 
-class ToppingsListViewController: UITableViewController {
+    let SectionHeaderHeight: CGFloat = 50
+    var toppingsChoice = [String]()
 
+
+class ToppingsListViewController: UITableViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
-
+    
     // MARK: - TableView Setup
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -31,10 +35,32 @@ class ToppingsListViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "toppingCell", for: indexPath)
-        cell.textLabel?.text = toppingsCategories[indexPath.section].toppings[indexPath.row]
+        let toppingForCell = toppingsCategories[indexPath.section].toppings[indexPath.row]
+        cell.textLabel?.text = toppingForCell
+        
+        if toppingsChoice.contains(toppingForCell) {
+            cell.accessoryType = .checkmark
+        } else {
+            cell.accessoryType = .none
+        }
+        
         return cell
     }
     
-
-
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return toppingsCategories.count
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        
+        return SectionHeaderHeight
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
+        return toppingsCategories[section].categoryName
+    }
+    
+    
+    
 }
