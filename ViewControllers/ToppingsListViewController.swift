@@ -29,10 +29,12 @@ class ToppingsListViewController: UITableViewController {
     
     // MARK: - TableView Setup
     
+    // Row counting
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return toppingsCategories[section].categoryName.count
     }
     
+    // Setting the cells
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "toppingCell", for: indexPath)
         let toppingForCell = toppingsCategories[indexPath.section].toppings[indexPath.row]
@@ -47,24 +49,51 @@ class ToppingsListViewController: UITableViewController {
         return cell
     }
     
+    // Sections (Vegetable, Meats, etc.)
     override func numberOfSections(in tableView: UITableView) -> Int {
         return toppingsCategories.count
     }
     
-//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        
-//    }
+    // Specific details/style for Section Header
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        let header = view as! UITableViewHeaderFooterView
+        header.backgroundView?.backgroundColor = .white
+        header.textLabel?.textColor = #colorLiteral(red: 0.521568656, green: 0.1098039225, blue: 0.05098039284, alpha: 1)
+        header.textLabel?.font = UIFont(name: "Helvetica-Bold", size: 18)
+    }
     
+    // Height for Section Header Title
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         
         return SectionHeaderHeight
     }
     
+    // Title displayed in Sectin Header
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
         return toppingsCategories[section].categoryName
     }
     
+    // Checkmark functionality (Adding to array of the toppingsChoice)
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if let cell = tableView.cellForRow(at: indexPath) {
+            if cell.accessoryType == .none {
+                cell.accessoryType = .checkmark
+                
+                toppingsChoice.append(toppingsCategories[indexPath.section].toppings[indexPath.row])
+                
+            } else {
+                cell.accessoryType = .none
+                toppingsChoice.removeAll { (string) -> Bool in
+                    string == toppingsCategories[indexPath.section].toppings[indexPath.row]
+                }
+            }
+            
+        }
+        print(toppingsChoice)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
     
     
 }
