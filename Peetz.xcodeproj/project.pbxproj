@@ -15,6 +15,7 @@
 		7D0A3011220A0FA800EF7389 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A3010220A0FA800EF7389 /* HomeViewController.swift */; };
 		7D0A3015220A14E100EF7389 /* ToppingsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A3014220A14E100EF7389 /* ToppingsListViewController.swift */; };
 		7D8CA746220C83900057E07E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8CA745220C83900057E07E /* AboutViewController.swift */; };
+		7D92125D220CB00100B9674B /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D92125C220CB00100B9674B /* FavoritesViewController.swift */; };
 		7DC7351A220A1D2E0042EB93 /* ToppingCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC73519220A1D2E0042EB93 /* ToppingCategory.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		7D0A3010220A0FA800EF7389 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7D0A3014220A14E100EF7389 /* ToppingsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToppingsListViewController.swift; sourceTree = "<group>"; };
 		7D8CA745220C83900057E07E /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		7D92125C220CB00100B9674B /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		7DC73519220A1D2E0042EB93 /* ToppingCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToppingCategory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 				7D0A3010220A0FA800EF7389 /* HomeViewController.swift */,
 				7D0A3014220A14E100EF7389 /* ToppingsListViewController.swift */,
 				7D8CA745220C83900057E07E /* AboutViewController.swift */,
+				7D92125C220CB00100B9674B /* FavoritesViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				7D0A3011220A0FA800EF7389 /* HomeViewController.swift in Sources */,
 				7D0A3015220A14E100EF7389 /* ToppingsListViewController.swift in Sources */,
 				7D8CA746220C83900057E07E /* AboutViewController.swift in Sources */,
+				7D92125D220CB00100B9674B /* FavoritesViewController.swift in Sources */,
 				7DC7351A220A1D2E0042EB93 /* ToppingCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
