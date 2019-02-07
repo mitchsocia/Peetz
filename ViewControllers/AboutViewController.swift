@@ -18,5 +18,15 @@ class AboutViewController: UIViewController {
     
     @IBOutlet weak var aboutTextView: UITextView!
     
-
+    
+    
+    @IBAction func back(_ sender: Any) {
+        
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
+    
 }
+
+
