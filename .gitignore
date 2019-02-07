@@ -21,6 +21,7 @@ Constants.swift
 xcuserdata/
 *.xcuserdata
 .DS_Store
+*.xcuserstate
 
 ## Other
 *.moved-aside
