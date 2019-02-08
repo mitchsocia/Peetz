@@ -32,7 +32,7 @@ class ToppingsListViewController: UITableViewController {
     
     // Row counting
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return toppingsCategories[section].categoryName.count
+        return toppingsCategories[section].toppings.count
     }
     
     // Setting the cells
@@ -58,15 +58,10 @@ class ToppingsListViewController: UITableViewController {
     // Specific details/style for Section Header
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         let header = view as! UITableViewHeaderFooterView
-<<<<<<< HEAD
-        header.backgroundView?.backgroundColor = #colorLiteral(red: 0.9372549057, green: 0.9372549057, blue: 0.9568627477, alpha: 1)
-        header.textLabel?.textColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
-        header.textLabel?.font = UIFont(name: "Helvetica-Bold", size: 18)
-=======
         header.backgroundView?.backgroundColor = .white
         header.textLabel?.textColor = #colorLiteral(red: 0.521568656, green: 0.1098039225, blue: 0.05098039284, alpha: 1)
         header.textLabel?.font = UIFont(name: "Helvetica-Bold", size: 20)
->>>>>>> stack
+
     }
     
     // Section separator (not working)
