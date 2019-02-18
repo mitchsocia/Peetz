@@ -106,10 +106,10 @@
             </objects>
             <point key="canvasLocation" x="1718" y="27"/>
         </scene>
-        <!--View Controller-->
+        <!--Location View Controller-->
         <scene sceneID="515-7b-sOm">
             <objects>
-                <viewController id="unk-38-3zA" sceneMemberID="viewController">
+                <viewController id="unk-38-3zA" customClass="LocationViewController" customModule="Peetz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jRT-7z-9ky">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
