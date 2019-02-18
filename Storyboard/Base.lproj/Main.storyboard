@@ -38,6 +38,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYn-7w-gvb">
                                 <rect key="frame" x="16" y="559" width="160" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="h3Y-xR-2KH"/>
+                                </constraints>
                                 <state key="normal" title="Favorites">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -45,9 +48,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qkl-FG-5Yz">
                                 <rect key="frame" x="199" y="559" width="160" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="159" id="tS8-hV-gJM"/>
-                                </constraints>
                                 <state key="normal" title="About">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -55,20 +55,17 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Qkl-FG-5Yz" firstAttribute="trailing" secondItem="FSZ-y3-4p8" secondAttribute="trailing" id="0sm-Oo-JBu"/>
-                            <constraint firstItem="42T-Fq-QCB" firstAttribute="leading" secondItem="sYn-7w-gvb" secondAttribute="leading" id="2NG-S9-Txg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Qkl-FG-5Yz" secondAttribute="bottom" constant="78" id="2rX-iy-tXr"/>
-                            <constraint firstItem="42T-Fq-QCB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="379" id="9bJ-TS-Gbw"/>
-                            <constraint firstItem="Qkl-FG-5Yz" firstAttribute="top" secondItem="FSZ-y3-4p8" secondAttribute="bottom" constant="30" id="9n7-c8-bFf"/>
-                            <constraint firstItem="Qkl-FG-5Yz" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="CHg-Se-G4f"/>
-                            <constraint firstItem="Qkl-FG-5Yz" firstAttribute="trailing" secondItem="42T-Fq-QCB" secondAttribute="trailing" id="FnF-PG-e6i"/>
-                            <constraint firstItem="Qkl-FG-5Yz" firstAttribute="baseline" secondItem="sYn-7w-gvb" secondAttribute="baseline" id="GG3-h4-bYV"/>
-                            <constraint firstItem="sYn-7w-gvb" firstAttribute="width" secondItem="Qkl-FG-5Yz" secondAttribute="width" id="GbT-hf-u2D"/>
-                            <constraint firstItem="FSZ-y3-4p8" firstAttribute="top" secondItem="42T-Fq-QCB" secondAttribute="bottom" constant="26" id="V5x-ic-gom"/>
-                            <constraint firstItem="42T-Fq-QCB" firstAttribute="leading" secondItem="FSZ-y3-4p8" secondAttribute="leading" id="hHN-x8-XJc"/>
-                            <constraint firstItem="FSZ-y3-4p8" firstAttribute="width" secondItem="42T-Fq-QCB" secondAttribute="width" id="jJb-EA-aFf"/>
-                            <constraint firstItem="Qkl-FG-5Yz" firstAttribute="leading" secondItem="sYn-7w-gvb" secondAttribute="trailing" constant="23" id="qnm-DW-AdK"/>
-                            <constraint firstItem="42T-Fq-QCB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="z3b-Gl-ZWX"/>
+                            <constraint firstItem="FSZ-y3-4p8" firstAttribute="leading" secondItem="sYn-7w-gvb" secondAttribute="leading" id="0jD-M4-g8g"/>
+                            <constraint firstItem="sYn-7w-gvb" firstAttribute="baseline" secondItem="Qkl-FG-5Yz" secondAttribute="baseline" id="75R-zt-p8H"/>
+                            <constraint firstItem="42T-Fq-QCB" firstAttribute="trailing" secondItem="FSZ-y3-4p8" secondAttribute="trailing" id="DRL-uv-7Hg"/>
+                            <constraint firstItem="42T-Fq-QCB" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Nyh-fg-7XU"/>
+                            <constraint firstItem="FSZ-y3-4p8" firstAttribute="top" secondItem="42T-Fq-QCB" secondAttribute="bottom" constant="26" id="Pvn-iL-qU4"/>
+                            <constraint firstItem="Qkl-FG-5Yz" firstAttribute="leading" secondItem="sYn-7w-gvb" secondAttribute="trailing" constant="23" id="STK-dZ-uEk"/>
+                            <constraint firstItem="42T-Fq-QCB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="379" id="VMD-0f-sic"/>
+                            <constraint firstItem="42T-Fq-QCB" firstAttribute="leading" secondItem="FSZ-y3-4p8" secondAttribute="leading" id="iGO-vf-4AL"/>
+                            <constraint firstItem="sYn-7w-gvb" firstAttribute="top" secondItem="FSZ-y3-4p8" secondAttribute="bottom" constant="30" id="shF-OW-vSs"/>
+                            <constraint firstItem="FSZ-y3-4p8" firstAttribute="trailing" secondItem="Qkl-FG-5Yz" secondAttribute="trailing" id="vnJ-qh-83i"/>
+                            <constraint firstItem="42T-Fq-QCB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="x5F-91-hyw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
