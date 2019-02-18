@@ -64,17 +64,6 @@ class ToppingsListViewController: UITableViewController {
 
     }
     
-    // Section separator (not working)
-//    override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-//
-//        let footerView = UIView()
-//        let separatorView = UIView(frame: CGRect(x: tableView.separatorInset.left, y: footerView.frame.height, width: tableView.frame.width - tableView.separatorInset.right - tableView.separatorInset.left, height: 1))
-//        separatorView.backgroundColor = UIColor.red
-//        footerView.addSubview(separatorView)
-//        return footerView
-//
-//    }
-    
     // Height for Section Header Title
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         
