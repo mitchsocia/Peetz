@@ -42,11 +42,15 @@ class ToppingsListViewController: UITableViewController {
         let toppingForCell = toppingsCategories[indexPath.section].toppings[indexPath.row]
         cell.textLabel?.text = toppingForCell
         
-        if toppingsChoice.contains(toppingForCell) {
-            cell.accessoryType = .checkmark
-        } else {
-            cell.accessoryType = .none
-        }
+//        if toppingsChoice.contains(toppingForCell) {
+//            cell.accessoryType = .checkmark
+//        } else {
+//            cell.accessoryType = .none
+//        }
+        
+        cell.accessoryType = toppingsChoice.contains(toppingForCell) ? .checkmark : .none
+        
+        //cell.accessoryType = item.done ? .checkmark : .none
         
         return cell
     }
