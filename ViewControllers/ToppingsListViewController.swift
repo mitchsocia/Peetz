@@ -26,6 +26,7 @@ class ToppingsListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.reloadData()
+        
     }
     
     // MARK: - TableView Setup
