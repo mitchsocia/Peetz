@@ -33,7 +33,11 @@ class ToppingsListViewController: UITableViewController {
     
     // Row counting
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       
+        tableView.sectionIndexColor = #colorLiteral(red: 0.9325659871, green: 0.387100935, blue: 0.3204991817, alpha: 1)
+        
         return toppingsCategories[section].toppings.count
+        
     }
     
     // Setting the cells
@@ -50,8 +54,6 @@ class ToppingsListViewController: UITableViewController {
         
         cell.accessoryType = toppingsChoice.contains(toppingForCell) ? .checkmark : .none
         
-        //cell.accessoryType = item.done ? .checkmark : .none
-        
         return cell
     }
     
@@ -63,8 +65,8 @@ class ToppingsListViewController: UITableViewController {
     // Specific details/style for Section Header
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         let header = view as! UITableViewHeaderFooterView
-        header.backgroundView?.backgroundColor = .white
-        header.textLabel?.textColor = #colorLiteral(red: 0.521568656, green: 0.1098039225, blue: 0.05098039284, alpha: 1)
+        header.backgroundView?.backgroundColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+        header.textLabel?.textColor = #colorLiteral(red: 0.9372549057, green: 0.9372549057, blue: 0.9568627477, alpha: 1)
         header.textLabel?.font = UIFont(name: "Helvetica-Bold", size: 20)
 
     }
@@ -87,7 +89,6 @@ class ToppingsListViewController: UITableViewController {
         if let cell = tableView.cellForRow(at: indexPath) {
             if cell.accessoryType == .none {
                 cell.accessoryType = .checkmark
-                
                 toppingsChoice.append(toppingsCategories[indexPath.section].toppings[indexPath.row])
                 
             } else {
@@ -100,6 +101,7 @@ class ToppingsListViewController: UITableViewController {
         }
         print(toppingsChoice)
         tableView.deselectRow(at: indexPath, animated: true)
+        
     }
     
     
