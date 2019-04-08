@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		735EC2107A985E095F1D7E7D /* Pods_PeetzTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F93FD290BAC377CF020012 /* Pods_PeetzTests.framework */; };
 		7D0A2FF1220A0D3500EF7389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A2FF0220A0D3500EF7389 /* AppDelegate.swift */; };
 		7D0A2FF6220A0D3500EF7389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D0A2FF4220A0D3500EF7389 /* Main.storyboard */; };
 		7D0A2FF8220A0D3600EF7389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D0A2FF7220A0D3600EF7389 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 		7D0A3015220A14E100EF7389 /* ToppingsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A3014220A14E100EF7389 /* ToppingsListViewController.swift */; };
 		7DC2E8FA221B0E43002457AA /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC2E8F9221B0E43002457AA /* LocationViewController.swift */; };
 		7DC7351A220A1D2E0042EB93 /* ToppingCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC73519220A1D2E0042EB93 /* ToppingCategory.swift */; };
+		EB7E5CB0E785CE29ACA9EFB6 /* Pods_Peetz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D235517292E9E532200C00C2 /* Pods_Peetz.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04EF3949E3ED2D196222BDA2 /* Pods-Peetz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peetz.debug.xcconfig"; path = "Target Support Files/Pods-Peetz/Pods-Peetz.debug.xcconfig"; sourceTree = "<group>"; };
+		08FAE442FB2E77596688DEA0 /* Pods-PeetzTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeetzTests.release.xcconfig"; path = "Target Support Files/Pods-PeetzTests/Pods-PeetzTests.release.xcconfig"; sourceTree = "<group>"; };
+		3E8692B888C7712F35CF5DDC /* Pods-PeetzTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeetzTests.debug.xcconfig"; path = "Target Support Files/Pods-PeetzTests/Pods-PeetzTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7D0A2FED220A0D3500EF7389 /* Peetz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Peetz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D0A2FF0220A0D3500EF7389 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D0A2FF5220A0D3500EF7389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,6 +47,9 @@
 		7D0A3014220A14E100EF7389 /* ToppingsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToppingsListViewController.swift; sourceTree = "<group>"; };
 		7DC2E8F9221B0E43002457AA /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		7DC73519220A1D2E0042EB93 /* ToppingCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToppingCategory.swift; sourceTree = "<group>"; };
+		C0F93FD290BAC377CF020012 /* Pods_PeetzTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeetzTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D235517292E9E532200C00C2 /* Pods_Peetz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Peetz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF04E66F5B748D5E5E50127E /* Pods-Peetz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peetz.release.xcconfig"; path = "Target Support Files/Pods-Peetz/Pods-Peetz.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB7E5CB0E785CE29ACA9EFB6 /* Pods_Peetz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +65,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				735EC2107A985E095F1D7E7D /* Pods_PeetzTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E641E58362B9A5C5443B98F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D235517292E9E532200C00C2 /* Pods_Peetz.framework */,
+				C0F93FD290BAC377CF020012 /* Pods_PeetzTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7D0A2FE4220A0D3500EF7389 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +90,8 @@
 				7D0A2FEF220A0D3500EF7389 /* Peetz */,
 				7D0A3004220A0D3600EF7389 /* PeetzTests */,
 				7D0A2FEE220A0D3500EF7389 /* Products */,
+				8E2FFA8E315194B5CDA067AC /* Pods */,
+				3E641E58362B9A5C5443B98F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +150,18 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		8E2FFA8E315194B5CDA067AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04EF3949E3ED2D196222BDA2 /* Pods-Peetz.debug.xcconfig */,
+				FF04E66F5B748D5E5E50127E /* Pods-Peetz.release.xcconfig */,
+				3E8692B888C7712F35CF5DDC /* Pods-PeetzTests.debug.xcconfig */,
+				08FAE442FB2E77596688DEA0 /* Pods-PeetzTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D0A300A220A0D3600EF7389 /* Build configuration list for PBXNativeTarget "Peetz" */;
 			buildPhases = (
+				0CB9BF633E71767417825219 /* [CP] Check Pods Manifest.lock */,
 				7D0A2FE9220A0D3500EF7389 /* Sources */,
 				7D0A2FEA220A0D3500EF7389 /* Frameworks */,
 				7D0A2FEB220A0D3500EF7389 /* Resources */,
+				40B520F56DC71AB3BFFEAFE8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -153,6 +188,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D0A300D220A0D3600EF7389 /* Build configuration list for PBXNativeTarget "PeetzTests" */;
 			buildPhases = (
+				CABE4168CEB75DA6461A5E9B /* [CP] Check Pods Manifest.lock */,
 				7D0A2FFD220A0D3600EF7389 /* Sources */,
 				7D0A2FFE220A0D3600EF7389 /* Frameworks */,
 				7D0A2FFF220A0D3600EF7389 /* Resources */,
@@ -224,6 +260,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CB9BF633E71767417825219 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Peetz-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40B520F56DC71AB3BFFEAFE8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Peetz/Pods-Peetz-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Peetz/Pods-Peetz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CABE4168CEB75DA6461A5E9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PeetzTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7D0A2FE9220A0D3500EF7389 /* Sources */ = {
@@ -394,6 +499,7 @@
 		};
 		7D0A300B220A0D3600EF7389 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04EF3949E3ED2D196222BDA2 /* Pods-Peetz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -412,6 +518,7 @@
 		};
 		7D0A300C220A0D3600EF7389 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF04E66F5B748D5E5E50127E /* Pods-Peetz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -430,6 +537,7 @@
 		};
 		7D0A300E220A0D3600EF7389 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E8692B888C7712F35CF5DDC /* Pods-PeetzTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -450,6 +558,7 @@
 		};
 		7D0A300F220A0D3600EF7389 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08FAE442FB2E77596688DEA0 /* Pods-PeetzTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
