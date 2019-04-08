@@ -11,7 +11,12 @@ import Alamofire
 import GooglePlaces
 
 class LocationViewController: UIViewController {
+    
+    var placesClient: GMSPlacesClient!
 
+    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

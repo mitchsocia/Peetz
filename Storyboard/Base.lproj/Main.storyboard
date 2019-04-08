@@ -121,10 +121,21 @@
                                 <color key="textColor" red="0.24050192640000001" green="0.079864083899999994" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Near you" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Huy-vS-Q5h">
+                                <rect key="frame" x="16" y="230" width="343" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.24050192640000001" green="0.079864083899999994" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="7yZ-hQ-oDt"/>
                     </view>
+                    <connections>
+                        <outlet property="addressLabel" destination="Huy-vS-Q5h" id="4Wm-Y6-wX9"/>
+                        <outlet property="nameLabel" destination="H8R-i4-p1o" id="c7F-ST-8PY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qcn-1W-7GZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
