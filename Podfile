@@ -7,6 +7,8 @@ target 'Peetz' do
   # Pods for Peetz
 
     pod 'Alamofire'
+    pod 'GooglePlaces'
+    pod 'GoogleMaps'
 
   target 'PeetzTests' do
     inherit! :search_paths
