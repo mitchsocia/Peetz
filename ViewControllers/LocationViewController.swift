@@ -10,7 +10,9 @@ import UIKit
 import Alamofire
 import GooglePlaces
 
-class LocationViewController: UIViewController {
+class LocationViewController: UIViewController, CLLocationManagerDelegate {
+    
+    let locationManager = CLLocationManager()
     
     var placesClient: GMSPlacesClient!
 
@@ -19,6 +21,12 @@ class LocationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        locationManager.delegate = self
+        if CLLocationManager.authorizationStatus() == .notDetermined {
+            locationManager.requestWhenInUseAuthorization()
+        }
+        
         placesClient = GMSPlacesClient.shared()
 
     }
