@@ -5,25 +5,30 @@ PODS:
   - GoogleMaps/Base (3.0.3)
   - GoogleMaps/Maps (3.0.3):
     - GoogleMaps/Base
+  - GooglePlacePicker (3.0.3):
+    - GoogleMaps (= 3.0.3)
+    - GooglePlaces (= 3.0.3)
   - GooglePlaces (3.0.3):
     - GoogleMaps/Base (= 3.0.3)
 
 DEPENDENCIES:
   - Alamofire
-  - GoogleMaps
+  - GooglePlacePicker
   - GooglePlaces
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - GoogleMaps
+    - GooglePlacePicker
     - GooglePlaces
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   GoogleMaps: fd5c9fa58871781b9fb94d4936f19c69fe60ce32
+  GooglePlacePicker: 0c90898945f02ef36cce86fc9a107e1c5d3d26b1
   GooglePlaces: f09e76993c9c3ee4af8f4f7f535bb94d6aa3b649
 
-PODFILE CHECKSUM: 66b37a98440b7db068e6b5b839e7af417ce40fe2
+PODFILE CHECKSUM: ea8ea38dd6e7a468a0ac3bb8a5c6bf9b5463f0da
 
 COCOAPODS: 1.6.1

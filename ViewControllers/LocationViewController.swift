@@ -47,6 +47,12 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
                 if let place = place {
                     self.nameLabel.text = place.name
                     self.addressLabel.text = place.formattedAddress?.components(separatedBy: ", ").joined(separator: "\n")
+                    
+                    print(place.name ?? "No name")
+                    print(place.formattedAddress ?? "None")
+                    print(place.coordinate.latitude)
+                    print(place.coordinate.longitude)
+                    
                 }
             }
         }
