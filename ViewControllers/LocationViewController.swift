@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Alamofire
 import GooglePlaces
 
 class LocationViewController: UIViewController, CLLocationManagerDelegate {
@@ -31,6 +30,8 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
 
     }
     
+    var addressThings: [String] = []
+    
     @IBAction func getCurrentPlace(_ sender: UIButton) {
         
         placesClient.currentPlace { (placeLikelihoodList, error) -> Void in
@@ -45,13 +46,19 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
             if let placeLikelihoodList = placeLikelihoodList {
                 let place = placeLikelihoodList.likelihoods.first?.place
                 if let place = place {
+                    
+                    self.addressThings.append("\(place.addressComponents)")
+                    
                     self.nameLabel.text = place.name
                     self.addressLabel.text = place.formattedAddress?.components(separatedBy: ", ").joined(separator: "\n")
+                    
+                    
                     
                     print(place.name ?? "No name")
                     print(place.formattedAddress ?? "None")
                     print(place.coordinate.latitude)
                     print(place.coordinate.longitude)
+                    
                     
                 }
             }
