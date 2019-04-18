@@ -30,7 +30,7 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
 
     }
     
-    var addressThings: [String] = []
+//    var addressThings: [String] = []
     
     @IBAction func getCurrentPlace(_ sender: UIButton) {
         
@@ -43,11 +43,12 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
             self.nameLabel.text = "No current place"
             self.addressLabel.text = "____"
             
+            // guard here
             if let placeLikelihoodList = placeLikelihoodList {
                 let place = placeLikelihoodList.likelihoods.first?.place
                 if let place = place {
                     
-                    self.addressThings.append("\(place.addressComponents)")
+//                    self.addressThings.append("\(place.addressComponents)")
                     
                     self.nameLabel.text = place.name
                     self.addressLabel.text = place.formattedAddress?.components(separatedBy: ", ").joined(separator: "\n")

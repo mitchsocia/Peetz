@@ -158,7 +158,6 @@
 				3E8692B888C7712F35CF5DDC /* Pods-PeetzTests.debug.xcconfig */,
 				08FAE442FB2E77596688DEA0 /* Pods-PeetzTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -216,9 +215,11 @@
 				TargetAttributes = {
 					7D0A2FEC220A0D3500EF7389 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					7D0A3000220A0D3600EF7389 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 7D0A2FEC220A0D3500EF7389;
 					};
 				};
@@ -538,7 +539,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.detroitlabs.Peetz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -557,7 +558,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.detroitlabs.Peetz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -577,7 +578,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.detroitlabs.PeetzTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Peetz.app/Peetz";
 			};
@@ -598,7 +599,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.detroitlabs.PeetzTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Peetz.app/Peetz";
 			};
