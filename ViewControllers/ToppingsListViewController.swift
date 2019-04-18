@@ -20,16 +20,24 @@ var toppingsCategories = [
     let SectionHeaderHeight: CGFloat = 50
     var toppingsChoice = [String]()
 
-
 class ToppingsListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.reloadData()
+      
+
+    }
+    
+    @IBAction func selectionButtonPressed(_ sender: UIBarButtonItem) {
+        
+       print("Button Pressed")
+
         
     }
     
-    
+
+
     
     // MARK: - TableView Setup
     

@@ -10,6 +10,8 @@ import UIKit
 
 class CombinationResultViewController: UIViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
