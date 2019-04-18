@@ -78,7 +78,7 @@
             </objects>
             <point key="canvasLocation" x="864.79999999999995" y="26.53673163418291"/>
         </scene>
-        <!--Toppings List View Controller-->
+        <!--Toppings to Choose-->
         <scene sceneID="ZvP-uu-ERR">
             <objects>
                 <tableViewController id="uu1-2I-sws" customClass="ToppingsListViewController" customModule="Peetz" customModuleProvider="target" sceneMemberID="viewController">
@@ -101,6 +101,13 @@
                             <outlet property="delegate" destination="uu1-2I-sws" id="aOb-mu-Y0X"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Toppings to Choose" id="tWe-Y0-NBZ">
+                        <barButtonItem key="rightBarButtonItem" title="Select" id="GfK-2e-cKE">
+                            <connections>
+                                <segue destination="PPM-j8-51L" kind="show" id="9ah-3G-g4i"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CQL-qr-h49" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
