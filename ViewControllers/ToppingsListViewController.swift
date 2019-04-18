@@ -17,33 +17,41 @@ var toppingsCategories = [
 ]
 
 // MARK: -
-    let SectionHeaderHeight: CGFloat = 50
-    var toppingsChoice = [String]()
+let SectionHeaderHeight: CGFloat = 50
+var toppingsChoice = [String]()
 
 class ToppingsListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.reloadData()
-      
-
+        
+        
     }
     
     @IBAction func selectionButtonPressed(_ sender: UIBarButtonItem) {
         
-       print("Button Pressed")
-
+        print(toppingsChoice.count)
+        print("Button pressed")
+        
+        func prepare(for segue: UIStoryboardSegue, sender: UIBarButtonItem?) {
+            if segue.identifier == "comboView" {
+                let destination = segue.destination as! CombinationResultViewController
+            }
+            performSegue(withIdentifier: "comboView", sender: UIBarButtonItem.self)
+        }
+        
         
     }
     
-
-
+    
+    
     
     // MARK: - TableView Setup
     
     // Row counting
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       
+        
         tableView.sectionIndexColor = #colorLiteral(red: 0.9325659871, green: 0.387100935, blue: 0.3204991817, alpha: 1)
         
         return toppingsCategories[section].toppings.count
@@ -56,11 +64,11 @@ class ToppingsListViewController: UITableViewController {
         let toppingForCell = toppingsCategories[indexPath.section].toppings[indexPath.row]
         cell.textLabel?.text = toppingForCell
         
-//        if toppingsChoice.contains(toppingForCell) {
-//            cell.accessoryType = .checkmark
-//        } else {
-//            cell.accessoryType = .none
-//        }
+        //        if toppingsChoice.contains(toppingForCell) {
+        //            cell.accessoryType = .checkmark
+        //        } else {
+        //            cell.accessoryType = .none
+        //        }
         
         cell.accessoryType = toppingsChoice.contains(toppingForCell) ? .checkmark : .none
         
@@ -78,7 +86,7 @@ class ToppingsListViewController: UITableViewController {
         header.backgroundView?.backgroundColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
         header.textLabel?.textColor = #colorLiteral(red: 0.9372549057, green: 0.9372549057, blue: 0.9568627477, alpha: 1)
         header.textLabel?.font = UIFont(name: "Helvetica-Bold", size: 20)
-
+        
     }
     
     // Height for Section Header Title

@@ -105,10 +105,12 @@
                         <barButtonItem key="rightBarButtonItem" title="Select" id="cdu-wI-RKK">
                             <connections>
                                 <action selector="selectionButtonPressed:" destination="uu1-2I-sws" id="Egq-d6-5GI"/>
-                                <segue destination="PPM-j8-51L" kind="show" identifier="comboView" id="JrI-zZ-zYl"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="PPM-j8-51L" kind="show" identifier="comboView" id="nCG-Ia-thZ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CQL-qr-h49" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
