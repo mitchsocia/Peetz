@@ -123,13 +123,25 @@
                     <view key="view" contentMode="scaleToFill" id="7qF-P1-fZa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmb-NX-gBg">
+                                <rect key="frame" x="16" y="591" width="76" height="56"/>
+                                <state key="normal" image="back"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.58168343321917804" green="0.73143193493150682" blue="0.66058433219178081" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hmb-NX-gBg" firstAttribute="top" secondItem="Sz7-mo-BY1" secondAttribute="top" constant="571" id="BFO-Pw-oWW"/>
+                            <constraint firstItem="Sz7-mo-BY1" firstAttribute="trailing" secondItem="hmb-NX-gBg" secondAttribute="trailing" constant="283" id="T0O-hO-4yv"/>
+                            <constraint firstItem="hmb-NX-gBg" firstAttribute="leading" secondItem="Sz7-mo-BY1" secondAttribute="leading" constant="16" id="m3m-Ei-22A"/>
+                            <constraint firstItem="Sz7-mo-BY1" firstAttribute="bottom" secondItem="hmb-NX-gBg" secondAttribute="bottom" constant="20" id="v55-EV-NOR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Sz7-mo-BY1"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1uD-YV-era" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2573" y="26"/>
+            <point key="canvasLocation" x="2572" y="25.637181409295355"/>
         </scene>
         <!--Location View Controller-->
         <scene sceneID="515-7b-sOm">
@@ -199,5 +211,8 @@
             <point key="canvasLocation" x="-74.400000000000006" y="26.53673163418291"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="back" width="513" height="358"/>
+    </resources>
     <color key="tintColor" red="0.24050192636986301" green="0.079864083904109595" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>
