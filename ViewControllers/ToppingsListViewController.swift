@@ -20,6 +20,11 @@ var toppingsChoice = [String]()
 
 class ToppingsListViewController: UITableViewController {
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination : CombinationResultViewController = segue.destination as! CombinationResultViewController
+        
+        destination.toppingCombinations = toppingsChoice
+    }
     
     @IBAction func selectionButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: "comboView", sender: self)
@@ -109,11 +114,3 @@ class ToppingsListViewController: UITableViewController {
 
 }
 
-
-
-//        func prepare(for segue: UIStoryboardSegue, sender: UIBarButtonItem?) {
-//            if segue.identifier == "comboView" {
-//                let destination = segue.destination as! CombinationResultViewController
-//            }
-//            performSegue(withIdentifier: "comboView", sender: UIBarButtonItem.self)
-//        }
