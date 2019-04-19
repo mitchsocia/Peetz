@@ -15,7 +15,7 @@ var toppingsCategories = [
     ToppingCategory(categoryName: "Meats", toppings: ["Pepperoni", "Ham", "Bacon", "Ground Beef", "Sausage", "Anchovie", "Chicken", "Salami"]),
     ToppingCategory(categoryName: "Misc.", toppings: ["Pineapple", "Pickle", "Garlic"])]
 
-let SectionHeaderHeight: CGFloat = 50
+let SectionHeaderHeight: CGFloat = 40
 var toppingsChoice = [String]()
 
 class ToppingsListViewController: UITableViewController {
@@ -29,8 +29,7 @@ class ToppingsListViewController: UITableViewController {
     @IBAction func selectionButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: "comboView", sender: self)
     }
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.reloadData()
@@ -41,8 +40,6 @@ class ToppingsListViewController: UITableViewController {
     
     // Row counting
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        tableView.sectionIndexColor = #colorLiteral(red: 0.9325659871, green: 0.387100935, blue: 0.3204991817, alpha: 1)
         
         return toppingsCategories[section].toppings.count
         
