@@ -13,40 +13,27 @@ import UIKit
 var toppingsCategories = [
     ToppingCategory(categoryName: "Vegetables", toppings: ["Tomato", "Onion", "Spinach", "Green Olive", "Black Olive", "Mild Pepper", "Green Pepper", "Mushroom", "Jalapeño", "Basil"]),
     ToppingCategory(categoryName: "Meats", toppings: ["Pepperoni", "Ham", "Bacon", "Ground Beef", "Sausage", "Anchovie", "Chicken", "Salami"]),
-    ToppingCategory(categoryName: "Misc.", toppings: ["Pineapple", "Pickle", "Garlic"])
-]
+    ToppingCategory(categoryName: "Misc.", toppings: ["Pineapple", "Pickle", "Garlic"])]
 
-// MARK: -
 let SectionHeaderHeight: CGFloat = 50
 var toppingsChoice = [String]()
 
 class ToppingsListViewController: UITableViewController {
     
+    
+    @IBAction func selectionButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "comboView", sender: self)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.reloadData()
-        
-        
+     
     }
-    
-    @IBAction func selectionButtonPressed(_ sender: UIBarButtonItem) {
-        
-        print(toppingsChoice.count)
-        print("Button pressed")
-        
-        func prepare(for segue: UIStoryboardSegue, sender: UIBarButtonItem?) {
-            if segue.identifier == "comboView" {
-                let destination = segue.destination as! CombinationResultViewController
-            }
-            performSegue(withIdentifier: "comboView", sender: UIBarButtonItem.self)
-        }
-        
-        
-    }
-    
-    
-    
-    
+
+
+
     // MARK: - TableView Setup
     
     // Row counting
@@ -121,6 +108,14 @@ class ToppingsListViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
         
     }
-    
-    
+
 }
+
+
+
+//        func prepare(for segue: UIStoryboardSegue, sender: UIBarButtonItem?) {
+//            if segue.identifier == "comboView" {
+//                let destination = segue.destination as! CombinationResultViewController
+//            }
+//            performSegue(withIdentifier: "comboView", sender: UIBarButtonItem.self)
+//        }

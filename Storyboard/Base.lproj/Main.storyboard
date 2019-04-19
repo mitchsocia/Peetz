@@ -104,12 +104,12 @@
                     <navigationItem key="navigationItem" title="Toppings to Choose" id="tWe-Y0-NBZ">
                         <barButtonItem key="rightBarButtonItem" title="Select" id="cdu-wI-RKK">
                             <connections>
-                                <action selector="selectionButtonPressed:" destination="uu1-2I-sws" id="Egq-d6-5GI"/>
+                                <action selector="selectionButtonPressed:" destination="uu1-2I-sws" id="oQ3-AS-Hmc"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="PPM-j8-51L" kind="show" identifier="comboView" id="nCG-Ia-thZ"/>
+                        <segue destination="PPM-j8-51L" kind="presentation" identifier="comboView" id="Cq0-3c-zzJ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CQL-qr-h49" userLabel="First Responder" sceneMemberID="firstResponder"/>
