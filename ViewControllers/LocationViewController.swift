@@ -14,7 +14,7 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
     let locationManager = CLLocationManager()
     
     var placesClient: GMSPlacesClient!
-
+    
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     
@@ -27,10 +27,8 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
         }
         
         placesClient = GMSPlacesClient.shared()
-
+        
     }
-    
-//    var addressThings: [String] = []
     
     @IBAction func getCurrentPlace(_ sender: UIButton) {
         
@@ -48,12 +46,8 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
                 let place = placeLikelihoodList.likelihoods.first?.place
                 if let place = place {
                     
-//                    self.addressThings.append("\(place.addressComponents)")
-                    
                     self.nameLabel.text = place.name
                     self.addressLabel.text = place.formattedAddress?.components(separatedBy: ", ").joined(separator: "\n")
-                    
-                    
                     
                     print(place.name ?? "No name")
                     print(place.formattedAddress ?? "None")
