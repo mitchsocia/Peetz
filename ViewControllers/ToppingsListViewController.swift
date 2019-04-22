@@ -16,7 +16,7 @@ var toppingsCategories = [
     ToppingCategory(categoryName: "Misc.", toppings: ["Pineapple", "Pickle", "Garlic"])]
 
 let SectionHeaderHeight: CGFloat = 40
-var toppingsChoice = [String]()
+var toppingsChoice = Set<String>()
 
 class ToppingsListViewController: UITableViewController {
     
@@ -94,19 +94,15 @@ class ToppingsListViewController: UITableViewController {
         if let cell = tableView.cellForRow(at: indexPath) {
             if cell.accessoryType == .none {
                 cell.accessoryType = .checkmark
-                toppingsChoice.append(toppingsCategories[indexPath.section].toppings[indexPath.row])
+                toppingsChoice.insert(toppingsCategories[indexPath.section].toppings[indexPath.row])
                 
             } else {
                 cell.accessoryType = .none
-                toppingsChoice.removeAll { (string) -> Bool in
-                    string == toppingsCategories[indexPath.section].toppings[indexPath.row]
-                }
+                toppingsChoice.remove(toppingsCategories[indexPath.section].toppings[indexPath.row])
             }
             
         }
-        print(toppingsChoice)
         tableView.deselectRow(at: indexPath, animated: true)
-        
     }
 
 }

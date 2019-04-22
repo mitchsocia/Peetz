@@ -9,8 +9,8 @@
 import UIKit
 
 class CombinationResultViewController: UIViewController {
-    
-    var toppingCombinations = [String]()
+
+    var toppingCombinations = Set<String>()
     
     @IBOutlet weak var toppingDisplayLabelOne: UILabel!
     
@@ -23,27 +23,21 @@ class CombinationResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        toppingDisplayLabelOne.text = removeDuplicates(array: toppingCombinations).randomElement()
-        toppingDisplayLabelTwo.text = removeDuplicates(array: toppingCombinations).randomElement()
-        
+        toppingDisplayLabelOne.text = toppingCombinations.pop()
+        toppingDisplayLabelTwo.text = toppingCombinations.pop()
+
     }
     
-    func removeDuplicates(array: [String]) -> [String] {
-        var encountered = Set<String>()
-        var result: [String] = []
-        for value in array {
-            if encountered.contains(value) {
-                // Do not add a duplicate element.
-            }
-            else {
-                // Add value to the set.
-                encountered.insert(value)
-                // ... Append the value.
-                result.append(value)
-            }
+}
+
+extension Set {
+    
+    mutating func pop() -> Element? {
+        guard let item = randomElement() else {
+            return nil
         }
-        return result
+        remove(item)
+        return item
     }
-    
     
 }
