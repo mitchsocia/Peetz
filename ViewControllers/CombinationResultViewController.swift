@@ -9,8 +9,32 @@
 import UIKit
 
 class CombinationResultViewController: UIViewController {
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toFav" {
+            if let destination = segue.destination as? FavoritesCollectionViewController {
+                destination.favsList.append(contentsOf: favoritesToBeAdded)
+            }
+        }
+    }
 
+    var favoritesToBeAdded = [String]()
+    
     var toppingCombinations = Set<String>()
+    
+    @IBAction func addFavButton(_ sender: Any) {
+        
+        if let fav = toppingDisplayLabelOne.text {
+            favoritesToBeAdded.append(fav)
+        }
+        if let fav2 = toppingDisplayLabelTwo.text {
+            favoritesToBeAdded.append(fav2)
+        }
+        
+        print(favoritesToBeAdded)
+        
+    }
+    
     
     @IBOutlet weak var toppingDisplayLabelOne: UILabel!
     

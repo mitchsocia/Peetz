@@ -16,6 +16,7 @@
 		7D0A3011220A0FA800EF7389 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A3010220A0FA800EF7389 /* HomeViewController.swift */; };
 		7D0A3015220A14E100EF7389 /* ToppingsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A3014220A14E100EF7389 /* ToppingsListViewController.swift */; };
 		7D18AACA2268C3F600D23767 /* CombinationResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D18AAC92268C3F600D23767 /* CombinationResultViewController.swift */; };
+		7D58B0A5226F54B3003A46B3 /* FavoritesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D58B0A4226F54B3003A46B3 /* FavoritesCollectionViewController.swift */; };
 		7DC2E8FA221B0E43002457AA /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC2E8F9221B0E43002457AA /* LocationViewController.swift */; };
 		7DC7351A220A1D2E0042EB93 /* ToppingCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC73519220A1D2E0042EB93 /* ToppingCategory.swift */; };
 		EB7E5CB0E785CE29ACA9EFB6 /* Pods_Peetz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D235517292E9E532200C00C2 /* Pods_Peetz.framework */; };
@@ -47,6 +48,7 @@
 		7D0A3010220A0FA800EF7389 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7D0A3014220A14E100EF7389 /* ToppingsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToppingsListViewController.swift; sourceTree = "<group>"; };
 		7D18AAC92268C3F600D23767 /* CombinationResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationResultViewController.swift; sourceTree = "<group>"; };
+		7D58B0A4226F54B3003A46B3 /* FavoritesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCollectionViewController.swift; sourceTree = "<group>"; };
 		7DC2E8F9221B0E43002457AA /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		7DC73519220A1D2E0042EB93 /* ToppingCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToppingCategory.swift; sourceTree = "<group>"; };
 		C0F93FD290BAC377CF020012 /* Pods_PeetzTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeetzTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +135,7 @@
 				7D0A3014220A14E100EF7389 /* ToppingsListViewController.swift */,
 				7DC2E8F9221B0E43002457AA /* LocationViewController.swift */,
 				7D18AAC92268C3F600D23767 /* CombinationResultViewController.swift */,
+				7D58B0A4226F54B3003A46B3 /* FavoritesCollectionViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D58B0A5226F54B3003A46B3 /* FavoritesCollectionViewController.swift in Sources */,
 				7DC2E8FA221B0E43002457AA /* LocationViewController.swift in Sources */,
 				7D18AACA2268C3F600D23767 /* CombinationResultViewController.swift in Sources */,
 				7D0A2FF1220A0D3500EF7389 /* AppDelegate.swift in Sources */,

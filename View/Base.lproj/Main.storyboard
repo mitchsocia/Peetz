@@ -149,6 +149,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXn-Nl-dMw">
+                                <rect key="frame" x="164" y="393" width="110" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Add Fav"/>
+                                <connections>
+                                    <action selector="addFavButton:" destination="PPM-j8-51L" eventType="touchUpInside" id="LyT-D1-kid"/>
+                                    <segue destination="1vT-AE-Czj" kind="show" identifier="toFav" id="KqV-Qe-9rU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.58168343321917804" green="0.73143193493150682" blue="0.66058433219178081" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -173,26 +183,26 @@
             </objects>
             <point key="canvasLocation" x="2572" y="25.637181409295355"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Favorites Collection View Controller-->
         <scene sceneID="TjJ-F4-Njv">
             <objects>
-                <collectionViewController id="1vT-AE-Czj" sceneMemberID="viewController">
+                <collectionViewController id="1vT-AE-Czj" customClass="FavoritesCollectionViewController" customModule="Peetz" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="R9Z-UB-7bT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.84013805648767126" green="0.73143193490000002" blue="0.66058433220000001" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yNH-jJ-5eg">
-                            <size key="itemSize" width="50" height="50"/>
+                            <size key="itemSize" width="170" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="yMP-gf-XFT">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <rect key="frame" x="0.0" y="0.0" width="170" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="170" height="128"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </view>
                             </collectionViewCell>
@@ -205,7 +215,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mpZ-8i-H15" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="84" y="799"/>
+            <point key="canvasLocation" x="1572" y="972.86356821589209"/>
         </scene>
         <!--Location View Controller-->
         <scene sceneID="515-7b-sOm">
@@ -250,7 +260,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qcn-1W-7GZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1269.5999999999999" y="799.2503748125938"/>
+            <point key="canvasLocation" x="2742" y="1009"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZOh-LH-Vep">
@@ -278,5 +288,8 @@
     <resources>
         <image name="back" width="513" height="358"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="KqV-Qe-9rU"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.24050192636986301" green="0.079864083904109595" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>
