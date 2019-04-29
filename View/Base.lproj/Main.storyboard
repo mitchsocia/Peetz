@@ -112,7 +112,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="PPM-j8-51L" kind="presentation" identifier="comboView" id="Cq0-3c-zzJ"/>
+                        <segue destination="PPM-j8-51L" kind="show" identifier="comboView" id="Cq0-3c-zzJ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CQL-qr-h49" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -156,7 +156,7 @@
                                 <state key="normal" title="Add Fav"/>
                                 <connections>
                                     <action selector="addFavButton:" destination="PPM-j8-51L" eventType="touchUpInside" id="LyT-D1-kid"/>
-                                    <segue destination="1vT-AE-Czj" kind="show" identifier="toFav" id="KqV-Qe-9rU"/>
+                                    <segue destination="1vT-AE-Czj" kind="show" identifier="toFav" id="GBG-gC-NKK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -298,7 +298,7 @@
         <image name="back" width="513" height="358"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="KqV-Qe-9rU"/>
+        <segue reference="GBG-gC-NKK"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.24050192636986301" green="0.079864083904109595" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>

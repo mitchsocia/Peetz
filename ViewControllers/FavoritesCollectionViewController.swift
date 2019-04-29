@@ -35,7 +35,7 @@ class FavoritesCollectionViewController: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return favsList.count
+        return favsList.count - 1
     }
 
 
