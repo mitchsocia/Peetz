@@ -20,6 +20,8 @@ var toppingsChoice = Set<String>()
 
 class ToppingsListViewController: UITableViewController {
     
+    @IBOutlet weak var selectButton: UIBarButtonItem!
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination : CombinationResultViewController = segue.destination as! CombinationResultViewController
         
@@ -33,6 +35,7 @@ class ToppingsListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.reloadData()
+        selectButton.isEnabled = false
      
     }
 
@@ -93,6 +96,7 @@ class ToppingsListViewController: UITableViewController {
         
         if let cell = tableView.cellForRow(at: indexPath) {
             if cell.accessoryType == .none {
+                selectButton.isEnabled = true
                 cell.accessoryType = .checkmark
                 toppingsChoice.insert(toppingsCategories[indexPath.section].toppings[indexPath.row])
                 

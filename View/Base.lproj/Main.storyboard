@@ -112,6 +112,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="selectButton" destination="cdu-wI-RKK" id="PyT-p8-GO4"/>
                         <segue destination="PPM-j8-51L" kind="show" identifier="comboView" id="Cq0-3c-zzJ"/>
                     </connections>
                 </tableViewController>
