@@ -19,3 +19,8 @@ class ToppingCategory {
     }
         
 }
+
+enum Catergory {
+    case veggie
+    case meat
+}
