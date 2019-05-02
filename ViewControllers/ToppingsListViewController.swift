@@ -36,7 +36,6 @@ class ToppingsListViewController: UITableViewController {
         super.viewDidLoad()
         tableView.reloadData()
         selectButton.isEnabled = false
-     
     }
 
     // MARK: - TableView Setup
@@ -95,18 +94,27 @@ class ToppingsListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if let cell = tableView.cellForRow(at: indexPath) {
+            
             if cell.accessoryType == .none {
-                selectButton.isEnabled = true
+                
                 cell.accessoryType = .checkmark
                 toppingsChoice.insert(toppingsCategories[indexPath.section].toppings[indexPath.row])
                 
             } else {
                 cell.accessoryType = .none
                 toppingsChoice.remove(toppingsCategories[indexPath.section].toppings[indexPath.row])
+                
             }
             
         }
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        if toppingsChoice.isEmpty {
+            selectButton.isEnabled = false
+        } else {
+            selectButton.isEnabled = true
+        }
+        
     }
 
 }
