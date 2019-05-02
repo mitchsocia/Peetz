@@ -18,6 +18,7 @@ var toppingsCategories = [
 let SectionHeaderHeight: CGFloat = 40
 var toppingsChoice = Set<String>()
 
+
 class ToppingsListViewController: UITableViewController {
     
     @IBOutlet weak var selectButton: UIBarButtonItem!
@@ -96,7 +97,6 @@ class ToppingsListViewController: UITableViewController {
         if let cell = tableView.cellForRow(at: indexPath) {
             
             if cell.accessoryType == .none {
-                
                 cell.accessoryType = .checkmark
                 toppingsChoice.insert(toppingsCategories[indexPath.section].toppings[indexPath.row])
                 
@@ -106,14 +106,14 @@ class ToppingsListViewController: UITableViewController {
                 
             }
             
+            if toppingsChoice.count < 2 {
+                selectButton.isEnabled = false
+            } else {
+                selectButton.isEnabled = true
+            }
+            
         }
         tableView.deselectRow(at: indexPath, animated: true)
-        
-        if toppingsChoice.isEmpty {
-            selectButton.isEnabled = false
-        } else {
-            selectButton.isEnabled = true
-        }
         
     }
 
