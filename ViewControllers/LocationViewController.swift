@@ -27,12 +27,8 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
         if CLLocationManager.authorizationStatus() == .notDetermined {
             locationManager.requestWhenInUseAuthorization()
         }
-        
         placesClient = GMSPlacesClient.shared()
         
-    }
-    
-    @IBAction func getCurrentPlace(_ sender: UIButton) {
         
         placesClient.currentPlace { (placeLikelihoodList, error) -> Void in
             if let error = error {
@@ -50,12 +46,6 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
                     
                     self.nameLabel.text = place.name
                     self.addressLabel.text = place.formattedAddress?.components(separatedBy: ", ").joined(separator: "\n")
-                    
-                    print(place.name ?? "No name")
-                    print(place.formattedAddress ?? "None")
-                    print(place.coordinate.latitude)
-                    print(place.coordinate.longitude)
-                    
                     
                 }
             }

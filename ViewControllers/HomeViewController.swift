@@ -9,20 +9,22 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-  
     
-    @IBAction func locationButtonPressed(_ sender: Any) {
-        
-        print("View popped")
-       
-        
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "toLocation" {
+//            if let destination = segue.destination as? LocationViewController {
+//                destination.
+//            }
+//        }
+//    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-     
-       
         
     }
+    
+    
+    
     
     // MARK: - Navigation
     
