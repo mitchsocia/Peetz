@@ -35,6 +35,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="locationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EeZ-rA-rzY"/>
                                     <segue destination="unk-38-3zA" kind="show" identifier="locationView" id="VjJ-dw-WSo"/>
                                 </connections>
                             </button>
@@ -299,7 +300,7 @@
         <image name="back" width="513" height="358"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GBG-gC-NKK"/>
+        <segue reference="rsu-Po-o7x"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.24050192636986301" green="0.079864083904109595" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>

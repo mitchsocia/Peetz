@@ -9,10 +9,19 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+  
     
+    @IBAction func locationButtonPressed(_ sender: Any) {
+        
+        print("View popped")
+       
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
      
+       
+        
     }
     
     // MARK: - Navigation

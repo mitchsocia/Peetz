@@ -11,6 +11,8 @@ import GooglePlaces
 
 class LocationViewController: UIViewController, CLLocationManagerDelegate {
     
+    var locations = [String]()
+    
     let locationManager = CLLocationManager()
     
     var placesClient: GMSPlacesClient!
