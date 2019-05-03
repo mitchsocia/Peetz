@@ -16,7 +16,6 @@
 		7D0A3011220A0FA800EF7389 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A3010220A0FA800EF7389 /* HomeViewController.swift */; };
 		7D0A3015220A14E100EF7389 /* ToppingsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A3014220A14E100EF7389 /* ToppingsListViewController.swift */; };
 		7D18AACA2268C3F600D23767 /* CombinationResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D18AAC92268C3F600D23767 /* CombinationResultViewController.swift */; };
-		7D29E852227CAD4600D9C826 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D29E851227CAD4600D9C826 /* SpinnerViewController.swift */; };
 		7D58B0A5226F54B3003A46B3 /* FavoritesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D58B0A4226F54B3003A46B3 /* FavoritesCollectionViewController.swift */; };
 		7DC2E8FA221B0E43002457AA /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC2E8F9221B0E43002457AA /* LocationViewController.swift */; };
 		7DC7351A220A1D2E0042EB93 /* ToppingCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC73519220A1D2E0042EB93 /* ToppingCategory.swift */; };
@@ -49,7 +48,6 @@
 		7D0A3010220A0FA800EF7389 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7D0A3014220A14E100EF7389 /* ToppingsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToppingsListViewController.swift; sourceTree = "<group>"; };
 		7D18AAC92268C3F600D23767 /* CombinationResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationResultViewController.swift; sourceTree = "<group>"; };
-		7D29E851227CAD4600D9C826 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
 		7D58B0A4226F54B3003A46B3 /* FavoritesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCollectionViewController.swift; sourceTree = "<group>"; };
 		7DC2E8F9221B0E43002457AA /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		7DC73519220A1D2E0042EB93 /* ToppingCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToppingCategory.swift; sourceTree = "<group>"; };
@@ -154,7 +152,6 @@
 			isa = PBXGroup;
 			children = (
 				7DC73519220A1D2E0042EB93 /* ToppingCategory.swift */,
-				7D29E851227CAD4600D9C826 /* SpinnerViewController.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -376,7 +373,6 @@
 				7DC2E8FA221B0E43002457AA /* LocationViewController.swift in Sources */,
 				7D18AACA2268C3F600D23767 /* CombinationResultViewController.swift in Sources */,
 				7D0A2FF1220A0D3500EF7389 /* AppDelegate.swift in Sources */,
-				7D29E852227CAD4600D9C826 /* SpinnerViewController.swift in Sources */,
 				7D0A3011220A0FA800EF7389 /* HomeViewController.swift in Sources */,
 				7D0A3015220A14E100EF7389 /* ToppingsListViewController.swift in Sources */,
 				7DC7351A220A1D2E0042EB93 /* ToppingCategory.swift in Sources */,
