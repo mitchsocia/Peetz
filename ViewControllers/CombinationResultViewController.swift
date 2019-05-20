@@ -8,15 +8,7 @@
 
 import UIKit
 
-//2.
-protocol CombinationResultViewControllerDelegate: class {
-    func combinationResultViewController(_ combinationResultViewController: CombinationResultViewController, didFinishWithName name: [String]?)
-}
-
 class CombinationResultViewController: UIViewController {
-    
-    //1.
-    weak var delegate: CombinationResultViewControllerDelegate?
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toFav" {
@@ -38,9 +30,6 @@ class CombinationResultViewController: UIViewController {
         if let fav2 = toppingDisplayLabelTwo.text {
             favoritesToBeAdded.append(fav2)
         }
-        
-        //3.
-        delegate?.combinationResultViewController(self, didFinishWithName: favoritesToBeAdded)
         
         print(favoritesToBeAdded)
         
