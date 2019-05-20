@@ -128,16 +128,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmb-NX-gBg">
-                                <rect key="frame" x="16" y="607" width="56" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="aEx-v0-nO8"/>
-                                </constraints>
-                                <state key="normal" image="back"/>
-                                <connections>
-                                    <action selector="goBackButton:" destination="PPM-j8-51L" eventType="touchUpInside" id="Lig-v1-aTR"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cL-vh-zrg">
                                 <rect key="frame" x="27" y="240" width="332" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
@@ -163,13 +153,10 @@
                         </subviews>
                         <color key="backgroundColor" red="0.58168343321917804" green="0.73143193493150682" blue="0.66058433219178081" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="hmb-NX-gBg" secondAttribute="bottom" constant="20" symbolic="YES" id="0zB-B2-PNW"/>
                             <constraint firstItem="3cL-vh-zrg" firstAttribute="leading" secondItem="Sz7-mo-BY1" secondAttribute="leading" constant="27" id="3NV-4n-BFZ"/>
                             <constraint firstItem="3cL-vh-zrg" firstAttribute="trailing" secondItem="7qF-P1-fZa" secondAttribute="trailingMargin" id="BMG-1s-Qq6"/>
                             <constraint firstItem="3cL-vh-zrg" firstAttribute="trailing" secondItem="rjJ-4o-UGI" secondAttribute="trailing" id="OsQ-8n-mgc"/>
                             <constraint firstItem="3cL-vh-zrg" firstAttribute="top" secondItem="rjJ-4o-UGI" secondAttribute="bottom" constant="77" id="cHs-JU-Vmz"/>
-                            <constraint firstItem="hmb-NX-gBg" firstAttribute="leading" secondItem="7qF-P1-fZa" secondAttribute="leadingMargin" id="hkw-ye-xI2"/>
-                            <constraint firstItem="Sz7-mo-BY1" firstAttribute="trailing" secondItem="hmb-NX-gBg" secondAttribute="trailing" constant="303" id="jLt-Kh-81c"/>
                             <constraint firstItem="3cL-vh-zrg" firstAttribute="leading" secondItem="rjJ-4o-UGI" secondAttribute="leading" id="rA4-Ak-04S"/>
                             <constraint firstItem="3cL-vh-zrg" firstAttribute="top" secondItem="7qF-P1-fZa" secondAttribute="top" constant="240" id="zxW-Df-ZBc"/>
                         </constraints>
@@ -290,11 +277,8 @@
             <point key="canvasLocation" x="84" y="27"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="back" width="513" height="358"/>
-    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rsu-Po-o7x"/>
+        <segue reference="GBG-gC-NKK"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.24050192636986301" green="0.079864083904109595" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>

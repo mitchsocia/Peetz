@@ -46,14 +46,9 @@ class CombinationResultViewController: UIViewController {
         
     }
     
-    
     @IBOutlet weak var toppingDisplayLabelOne: UILabel!
     
     @IBOutlet weak var toppingDisplayLabelTwo: UILabel!
-    
-    @IBAction func goBackButton(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
