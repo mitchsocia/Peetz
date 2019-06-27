@@ -53,7 +53,7 @@ class ToppingsListViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "toppingCell", for: indexPath)
         let toppingForCell = toppingsCategories[indexPath.section].toppings[indexPath.row]
         cell.textLabel?.text = toppingForCell
-        
+        cell.textLabel?.font = UIFont(name: "Euphemia UCAS", size: 16.0)
         cell.accessoryType = toppingsChoice.contains(toppingForCell) ? .checkmark : .none
         
         return cell
@@ -69,7 +69,7 @@ class ToppingsListViewController: UITableViewController {
         let header = view as! UITableViewHeaderFooterView
         header.backgroundView?.backgroundColor = #colorLiteral(red: 0.832983911, green: 0.6279641986, blue: 0.132577002, alpha: 1)
         header.textLabel?.textColor = #colorLiteral(red: 0.133444339, green: 0.1058034375, blue: 0.02791578509, alpha: 1)
-        header.textLabel?.font = UIFont(name: "Helvetica-Bold", size: 20)
+        header.textLabel?.font = UIFont(name: "Euphemia UCAS", size: 20)
         
     }
     
