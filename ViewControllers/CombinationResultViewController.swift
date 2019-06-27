@@ -52,7 +52,7 @@ class CombinationResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Euphemia UCAS", size: 18.0) as Any]
         toppingDisplayLabelOne.text = toppingCombinations.pop()
         toppingDisplayLabelTwo.text = toppingCombinations.pop()
 

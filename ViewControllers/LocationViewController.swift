@@ -23,6 +23,10 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Pizza Near Me"
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Euphemia UCAS", size: 18.0) as Any]
+        let backButton = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(UIWebView.goBack))
+        navigationItem.backBarButtonItem = backButton
         activity.startAnimating()
         locationManager.delegate = self
         if CLLocationManager.authorizationStatus() == .notDetermined {

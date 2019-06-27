@@ -10,22 +10,24 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "toLocation" {
-//            if let destination = segue.destination as? LocationViewController {
-//                destination.
-//            }
-//        }
-//    }
+    @IBOutlet weak var animationView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupImageViewAnimation()
+        animationView.startAnimating()
+        
     }
     
+    private func setupImageViewAnimation() {
+        animationView.animationImages = [#imageLiteral(resourceName: "pizza1"),#imageLiteral(resourceName: "pizza2"),#imageLiteral(resourceName: "pizza3"),#imageLiteral(resourceName: "pizza4"),#imageLiteral(resourceName: "pizza3"),#imageLiteral(resourceName: "pizza2"),#imageLiteral(resourceName: "pizza1")]
+        animationView.animationDuration = 1
+    }
     
+    @IBAction func buttonPress(_ sender: Any) {
+        
+    }
     
-    
-    // MARK: - Navigation
     
 }

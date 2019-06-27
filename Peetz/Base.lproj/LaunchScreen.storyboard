@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,31 +15,37 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rodion-kutsaev-82627" translatesAutoresizingMaskIntoConstraints="NO" id="9J8-O1-jUs">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizzabg" translatesAutoresizingMaskIntoConstraints="NO" id="9J8-O1-jUs">
+                                <rect key="frame" x="0.0" y="456" width="414" height="440"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="440" id="7e8-wQ-RQn"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="pizzabg" translatesAutoresizingMaskIntoConstraints="NO" id="gaT-4D-E5W">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="456"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="9J8-O1-jUs" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ASh-c8-ap6"/>
-                            <constraint firstItem="9J8-O1-jUs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Srl-ca-iQ6"/>
-                            <constraint firstItem="9J8-O1-jUs" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="bBa-SA-oXf"/>
-                            <constraint firstItem="9J8-O1-jUs" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gQw-Lx-9po"/>
-                            <constraint firstItem="9J8-O1-jUs" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="lFY-V3-NNS"/>
-                            <constraint firstItem="9J8-O1-jUs" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="rFS-Ib-4Hc"/>
+                            <constraint firstItem="9J8-O1-jUs" firstAttribute="leading" secondItem="gaT-4D-E5W" secondAttribute="leading" id="3no-ba-F3h"/>
+                            <constraint firstItem="9J8-O1-jUs" firstAttribute="top" secondItem="gaT-4D-E5W" secondAttribute="bottom" id="7GN-KA-MZ4"/>
+                            <constraint firstItem="9J8-O1-jUs" firstAttribute="trailing" secondItem="gaT-4D-E5W" secondAttribute="trailing" id="BeO-Bd-kAA"/>
+                            <constraint firstItem="9J8-O1-jUs" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="F0D-b2-iYg"/>
+                            <constraint firstAttribute="trailing" secondItem="9J8-O1-jUs" secondAttribute="trailing" id="MGR-JK-RY7"/>
+                            <constraint firstAttribute="bottom" secondItem="9J8-O1-jUs" secondAttribute="bottom" id="zSc-Bt-gp1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+            <point key="canvasLocation" x="50.724637681159422" y="374.33035714285711"/>
         </scene>
     </scenes>
     <resources>
-        <image name="rodion-kutsaev-82627" width="6000" height="4000"/>
+        <image name="pizzabg" width="470" height="402"/>
     </resources>
 </document>

@@ -18,7 +18,6 @@ var toppingsCategories = [
 let SectionHeaderHeight: CGFloat = 40
 var toppingsChoice = Set<String>()
 
-
 class ToppingsListViewController: UITableViewController {
     
     @IBOutlet weak var selectButton: UIBarButtonItem!
@@ -36,7 +35,8 @@ class ToppingsListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.reloadData()
-        selectButton.isEnabled = false 
+        selectButton.isEnabled = false
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Euphemia UCAS", size: 18.0) as Any]
     }
 
     // MARK: - TableView Setup
@@ -54,12 +54,6 @@ class ToppingsListViewController: UITableViewController {
         let toppingForCell = toppingsCategories[indexPath.section].toppings[indexPath.row]
         cell.textLabel?.text = toppingForCell
         
-        //        if toppingsChoice.contains(toppingForCell) {
-        //            cell.accessoryType = .checkmark
-        //        } else {
-        //            cell.accessoryType = .none
-        //        }
-        
         cell.accessoryType = toppingsChoice.contains(toppingForCell) ? .checkmark : .none
         
         return cell
@@ -73,8 +67,8 @@ class ToppingsListViewController: UITableViewController {
     // Specific details/style for Section Header
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         let header = view as! UITableViewHeaderFooterView
-        header.backgroundView?.backgroundColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
-        header.textLabel?.textColor = #colorLiteral(red: 0.9372549057, green: 0.9372549057, blue: 0.9568627477, alpha: 1)
+        header.backgroundView?.backgroundColor = #colorLiteral(red: 0.832983911, green: 0.6279641986, blue: 0.132577002, alpha: 1)
+        header.textLabel?.textColor = #colorLiteral(red: 0.133444339, green: 0.1058034375, blue: 0.02791578509, alpha: 1)
         header.textLabel?.font = UIFont(name: "Helvetica-Bold", size: 20)
         
     }

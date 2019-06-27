@@ -18,7 +18,8 @@ class FavoritesCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-  
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Euphemia UCAS", size: 18.0) as Any]
+        self.title = "Favorites"
         print(favsList)
 
         // Register cell classes
